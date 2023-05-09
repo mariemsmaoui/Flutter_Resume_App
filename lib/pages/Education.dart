@@ -58,8 +58,8 @@ class _EducationState extends State<Education> {
                 child: Text(
                   "Education",
                   style: GoogleFonts.lato(
-                    fontSize: 25,
-                    color: Colors.blue.shade200,
+                    fontSize: 40,
+                    color: Colors.blue.shade300,
                     fontWeight: FontWeight.bold,
                   ),
                 ),

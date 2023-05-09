@@ -42,7 +42,7 @@ final List<Course> recentCourses = [
 
  // Course(title: "HackUp ChallengeV2.0 "),
   Course(
-    title: "HackUp ChallengeV2.0",
+    title: "HackUp Challenge",
     description: "participated in compettion: coding",
     color: const Color(0xFF9CC5FF),
     iconSrc: "assets/images/hackup.png",

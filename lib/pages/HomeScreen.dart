@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:cv/pages/Education.dart';
@@ -39,32 +38,39 @@ class _HomeScreenState extends State<HomeScreen> {
               // your code here
 
               children: [
-                Container(margin: EdgeInsets.only(bottom: 100),
-                child: ListTile(
-                  leading: Icon(
-                    state.isDarkThemeOn
-                        ? Icons.dark_mode_outlined
-                        : Icons.light_mode,
-                    color: state.isDarkThemeOn ? Colors.black : Colors.white, // Set text color to white in dark mode, black in light mode
+                Container(
+                  margin: EdgeInsets.only(bottom: 100),
+                  child: ListTile(
+                    leading: Icon(
+                      state.isDarkThemeOn
+                          ? Icons.dark_mode_outlined
+                          : Icons.light_mode,
+                      color: state.isDarkThemeOn
+                          ? Colors.black
+                          : Colors
+                              .white, // Set text color to white in dark mode, black in light mode
 
-                    // color: Colors.white, // Set icon color to white
-                  ),
-                  title: Text(
-                    state.isDarkThemeOn ? "Dark Mode" : "Light Mode",
-                    style: TextStyle(
-                      color: state.isDarkThemeOn ? Colors.black : Colors.white, // Set text color to white in dark mode, black in light mode
-                      fontSize: 20,
+                      // color: Colors.white, // Set icon color to white
+                    ),
+                    title: Text(
+                      state.isDarkThemeOn ? "Dark Mode" : "Light Mode",
+                      style: TextStyle(
+                        color: state.isDarkThemeOn
+                            ? Colors.black
+                            : Colors
+                                .white, // Set text color to white in dark mode, black in light mode
+                        fontSize: 20,
+                      ),
+                    ),
+                    trailing: Switch(
+                      value: state.isDarkThemeOn,
+                      activeColor: theme.primaryColor,
+                      inactiveTrackColor: Colors.grey,
+                      onChanged: (newValue) {
+                        context.read<ThemeCubit>().updateTheme(newValue);
+                      },
                     ),
                   ),
-                  trailing: Switch(
-                    value: state.isDarkThemeOn,
-                    activeColor: theme.primaryColor,
-                    inactiveTrackColor: Colors.grey,
-                    onChanged: (newValue) {
-                      context.read<ThemeCubit>().updateTheme(newValue);
-                    },
-                  ),
-                ),
                 ),
                 Container(
                   margin: EdgeInsets.only(top: 35, bottom: 61),
@@ -91,7 +97,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     ],
                   ),
                 ),
-                SizedBox(height: 3),
+                SizedBox(height: 2),
                 SizedBox(
                   width: 300,
                   height: 100,
@@ -117,7 +123,7 @@ class _HomeScreenState extends State<HomeScreen> {
                                 ),
                               ),
                               style: ElevatedButton.styleFrom(
-                                primary: Colors.indigo.shade900,
+                                primary: Colors.blue.shade900,
                                 shape: RoundedRectangleBorder(
                                   borderRadius: BorderRadius.circular(20),
                                 ),
@@ -166,8 +172,12 @@ class _HomeScreenState extends State<HomeScreen> {
                       'Software Engineering & Businees Intelligence Student'
                     ],
                     textStyle: TextStyle(
-                        fontSize: 24.0, fontWeight: FontWeight.normal ,color: Colors.indigo.shade900),
+                        //fontFamily: 'Robototo Condensed',
 
+                        fontSize: 24.0,
+                        fontWeight: FontWeight.bold,
+                        fontFamily: 'Robototo Condensed',
+                        color: Colors.blue.shade700),
                     textAlign: TextAlign.center,
                     speed: Duration(milliseconds: 200),
                     repeatForever: true,

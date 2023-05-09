@@ -14,8 +14,11 @@ class _InformationsState extends State<Informations> {
   Widget build(BuildContext context) {
     return Column(
       children: [
+        SizedBox(height:15),
         Container(
-          width: 250,
+          width: 230,
+          margin: EdgeInsets.all(37),
+
           //   color: Colors.blue.shade200,
           child: ElevatedButton(
             onPressed: () {
@@ -140,8 +143,14 @@ class _InformationsState extends State<Informations> {
               minimumSize: Size(10, 50),
             ),
           ),
+
         ),
+
+
       ],
+
     );
+
   }
+
 }

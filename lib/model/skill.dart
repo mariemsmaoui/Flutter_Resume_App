@@ -8,7 +8,7 @@ class Skill {
     required this.title,
     this.description = '',
     this.iconSrc = "assets/images/aisec.png",
-    this.color = const Color(0xBD033C9A),
+    this.color = const Color(0xFF0D47A1),
   });
 }
 
@@ -25,7 +25,7 @@ final List<Skill> skills = [
   Skill(
     title: "Angular",
     iconSrc: "assets/images/angular.png",
-    color: const Color(0xBD033C9A),
+    color: const Color(0xFF0D47A1),
   ),
   Skill(
     title: "Adobe xd",
@@ -35,7 +35,7 @@ final List<Skill> skills = [
   Skill(
     title: "React Js & Native",
     iconSrc: "assets/images/react.png",
-    color: const Color(0xBD033C9A),
+    color: const Color(0xFF0D47A1),
   ),
 ];
 

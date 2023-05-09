@@ -61,9 +61,7 @@ class _InfosState extends State<Infos> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('About'),
-      ),
+
       body: Center(
         child:
             experienceData.isEmpty
@@ -75,9 +73,16 @@ class _InfosState extends State<Infos> {
       ),
       bottomSheet: Padding(
         padding: const EdgeInsets.all(17),
+
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
+            Text(
+              "",
+
+            ),
+            SizedBox(height:70),
+
             Expanded(
               child: Container(
                 child: ListView.builder(
@@ -95,7 +100,8 @@ class _InfosState extends State<Infos> {
                             title: Text(
                               experienceData[index]['title'],
                               style: TextStyle(
-                                fontSize: 15,
+                                color: Colors.blue.shade900,
+                                fontSize: 19,
                                 fontWeight: FontWeight.bold,
                               ),
                             ),
@@ -103,7 +109,7 @@ class _InfosState extends State<Infos> {
                               experienceData[index]['desciption'],
                               style: TextStyle(
                                 fontSize: 17,
-                                color: Color(0xBD033C9A),
+                                color: Colors.grey.shade200,
                               ),
                             ),
                             leading: Icon(
@@ -123,7 +129,7 @@ class _InfosState extends State<Infos> {
               ),
             ),
 
-           // SizedBox(height: 5),
+           SizedBox(height: 5),
 // infos button
           Informations()
           ],

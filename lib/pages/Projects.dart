@@ -5,7 +5,7 @@ import 'package:cv/screen/BottomNavigationBar.dart';
 import 'package:flutter/material.dart';
 import 'package:cv/configs/app_dimensions.dart';
 import '../../model/course.dart';
-import 'package:cv/components/course_card.dart';
+import 'package:cv/screen/Map.dart';
 
 import 'Skills.dart';
 

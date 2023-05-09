@@ -18,8 +18,7 @@ class _LanguagesState extends State<Languages> {
       margin: EdgeInsets.fromLTRB(20, 20, 20, 20),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(20),
-        color: Colors.blue.shade200,
-      ),
+        color: const Color(0xFF9CC5FF),      ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
@@ -37,8 +36,8 @@ class _LanguagesState extends State<Languages> {
                 Text(
                   "Native",
                   style: GoogleFonts.lato(
-                    fontSize: 12,
-                    color: Color(0xFF6E717E),
+                    fontSize: 17,
+                    color: Colors.grey.shade500,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -59,8 +58,8 @@ class _LanguagesState extends State<Languages> {
                 Text(
                   "DELF",
                   style: GoogleFonts.lato(
-                    fontSize: 12,
-                    color: Color(0xFF6E717E),
+                    fontSize: 17,
+                    color: Colors.grey.shade500,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -81,8 +80,8 @@ class _LanguagesState extends State<Languages> {
                 Text(
                   "BEC",
                   style: GoogleFonts.lato(
-                    fontSize: 12,
-                    color: Color(0xFF6E717E),
+                    fontSize: 17,
+                    color: Colors.grey.shade500,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
@@ -103,8 +102,8 @@ class _LanguagesState extends State<Languages> {
                 Text(
                   "Beginner",
                   style: GoogleFonts.lato(
-                    fontSize: 12,
-                    color: Color(0xFF6E717E),
+                    fontSize: 17,
+                    color: Colors.grey.shade500,
                     fontWeight: FontWeight.w500,
                   ),
                 ),
